@@ -1,0 +1,40 @@
+<custom-style> <!-- This is where your App's styling should go. You can use .css files too. -->
+<style>
+iron-icon.size-l {
+	width: var(--lumo-icon-size-l);
+	height: var(--lumo-icon-size-l);
+}
+
+.main-layout {
+            padding: 0px;
+	
+}
+</style>
+</custom-style>
+
+<dom-module id="my-text-field-styles"
+	theme-for="vaadin-text-field vaadin-text-area"> <template>
+<style>
+[part="input-field"] {
+	border: 1px solid gray;
+}
+</style>
+</template> </dom-module>
+
+<dom-module id="my-grid-styles" theme-for="vaadin-grid"> <template>
+<style>
+
+[part~="header-cell"]  ::slotted(vaadin-grid-cell-content) {
+	font-size: var(--lumo-font-size-l);
+}
+
+[part~="header-cell"] {
+	font-size: var(--lumo-font-size-l);
+	font-weight: bold;
+	background-color: #37474F;
+	color: var(--lumo-base-color);
+}
+ 
+</style>
+
+</template> </dom-module>
