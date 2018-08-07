@@ -4,8 +4,6 @@ import com.konxsys.chucknorris.backend.FactService;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.html.Label;
-import com.vaadin.flow.component.icon.Icon;
-import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextArea;
@@ -14,6 +12,10 @@ import com.vaadin.flow.router.Route;
 @Route(value="facts", layout=MainLayout.class)
 public class FactsView extends VerticalLayout {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private FactService factService = FactService.getInstance();
 	
 	public FactsView() {

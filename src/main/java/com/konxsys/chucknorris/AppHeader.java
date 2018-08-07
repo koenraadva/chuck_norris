@@ -8,6 +8,11 @@ import com.vaadin.flow.component.orderedlayout.FlexComponent;
 
 public class AppHeader extends HorizontalLayout {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public AppHeader() {
 		setHeight("67px");
     	getStyle().set("backgroundColor", "#37474F");

@@ -11,6 +11,11 @@ import com.vaadin.flow.router.Route;
 @Route(value="", layout=MainLayout.class)
 public class HomeView extends VerticalLayout {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public HomeView() {
     	setSizeFull();
     	setDefaultHorizontalComponentAlignment(FlexComponent.Alignment.CENTER);

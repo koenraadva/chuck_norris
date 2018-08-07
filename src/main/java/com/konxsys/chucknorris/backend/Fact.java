@@ -3,6 +3,10 @@ package com.konxsys.chucknorris.backend;
 import java.io.Serializable;
 
 public class Fact implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String[] category = {""};
 	private String icon_url = "";
 	private String id = "";

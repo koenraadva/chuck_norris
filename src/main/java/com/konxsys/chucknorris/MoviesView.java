@@ -16,6 +16,10 @@ import com.vaadin.flow.router.Route;
 @Route(value="movies", layout=MainLayout.class)
 public class MoviesView extends VerticalLayout {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private MovieService movieService = MovieService.getInstance();
 	private List<Movie> movies;
 	

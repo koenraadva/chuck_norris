@@ -1,7 +1,5 @@
 package com.konxsys.chucknorris;
 
-import java.util.Objects;
-
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasElement;
 import com.vaadin.flow.component.dependency.HtmlImport;
@@ -19,7 +17,12 @@ import com.vaadin.flow.theme.lumo.Lumo;
 @HtmlImport("styles/shared-styles.html")
 public class MainLayout extends VerticalLayout implements RouterLayout {
 
-    public MainLayout() {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public MainLayout() {
     	setSizeFull();
     	setSpacing(false);
     	setPadding(false);
