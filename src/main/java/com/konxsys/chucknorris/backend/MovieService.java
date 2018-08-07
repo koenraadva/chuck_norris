@@ -38,6 +38,7 @@ public class MovieService {
 		return instance;
 	}
 
+	
 	/**
 	 * Get all Joke Categories.
 	 *
@@ -49,7 +50,7 @@ public class MovieService {
 		URL url;
 		List<Movie> movies = null;
 		try {
-			url = new URL(THEMOVIEDB + "3/person/51576/movie_credits?language=en-US&api_key=YourAPIkey");
+			url = new URL(THEMOVIEDB + "3/person/51576/movie_credits?language=en-US&api_key=57d5022b5338dd529746ec63b42f68d6");
 			JsonNode jsonRoot = objectMapper.readTree(url);
 			JsonNode cast = jsonRoot.get("cast");
 			movies = Arrays.asList(objectMapper.treeToValue(cast,Movie[].class));
